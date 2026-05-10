@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Throughline — The Problem</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    height: 100%;
+    width: 100%;
+    background: #FAF7F2;
+    font-family: 'Inter', system-ui, sans-serif;
+    color: #2A2A2A;
+    overflow: hidden;
+  }
+  .slide {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6vh 8vw;
+    text-align: center;
+  }
+  .eyebrow {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #6B7B6F;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 4vh;
+  }
+  .headline {
+    font-family: 'Lora', Georgia, serif;
+    font-size: 7vw;
+    font-weight: 600;
+    line-height: 1.05;
+    color: #2A2A2A;
+    letter-spacing: -0.02em;
+    margin-bottom: 5vh;
+    max-width: 18ch;
+  }
+  .headline .accent { color: #C97B5C; }
+  .stats {
+    display: flex;
+    gap: 6vw;
+    margin-bottom: 6vh;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5vh;
+  }
+  .stat-number {
+    font-family: 'Lora', Georgia, serif;
+    font-size: 4.5vw;
+    font-weight: 600;
+    color: #6B8E7F;
+    line-height: 1;
+  }
+  .stat-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.05rem;
+    color: #6B7B6F;
+    font-weight: 500;
+    max-width: 18ch;
+    line-height: 1.4;
+  }
+  .wedge {
+    font-family: 'Lora', Georgia, serif;
+    font-size: 1.8vw;
+    font-weight: 500;
+    font-style: italic;
+    color: #2A2A2A;
+    line-height: 1.4;
+    max-width: 60ch;
+    border-top: 1px solid #EAE3D2;
+    padding-top: 4vh;
+  }
+  .wedge .underline {
+    background: linear-gradient(transparent 60%, rgba(201, 123, 92, 0.35) 60%);
+    padding: 0 0.2em;
+  }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="eyebrow">The problem</div>
+
+  <div class="headline">
+    <span class="accent">70%</span> of mental health patients<br>
+    drop by session 3.
+  </div>
+
+  <div class="stats">
+    <div class="stat">
+      <div class="stat-number">$50M</div>
+      <div class="stat-label">walking out of Klarity each year</div>
+    </div>
+    <div class="stat">
+      <div class="stat-number">3,000</div>
+      <div class="stat-label">practices on the platform</div>
+    </div>
+    <div class="stat">
+      <div class="stat-number">40K</div>
+      <div class="stat-label">patient visits every month</div>
+    </div>
+  </div>
+
+  <div class="wedge">
+    Every AI in mental health is pointed at the therapist's note.<br>
+    <span class="underline">We point it at the patient's sentence.</span>
+  </div>
+</div>
+</body>
+</html>
