@@ -16,7 +16,7 @@ from mock_data import (
 st.set_page_config(page_title="Klarity", page_icon="🌱", layout="centered")
 
 # -------------------- CSS --------------------
-st.markdown(
+st.html(
     """
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -263,8 +263,7 @@ st.markdown(
       [data-testid="stSidebar"] .pill-off,
       .pill-off { color: #9A9A9A !important; }
     </style>
-    """,
-    unsafe_allow_html=True,
+    """
 )
 
 # -------------------- Session state --------------------
