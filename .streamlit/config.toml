@@ -1,0 +1,17 @@
+# Klarity demo — force light theme so custom CSS palette renders correctly.
+# Streamlit otherwise auto-switches to dark mode based on OS, which makes
+# our cream-background design unreadable.
+
+[theme]
+base = "light"
+primaryColor = "#6B8E7F"            # sage green — primary accent
+backgroundColor = "#FAF7F2"         # warm cream — main bg
+secondaryBackgroundColor = "#FFF8F4" # warm white — cards, sidebar surfaces
+textColor = "#2A2A2A"               # near-black — body text
+font = "sans serif"
+
+[browser]
+gatherUsageStats = false
+
+[client]
+toolbarMode = "minimal"
